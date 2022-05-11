@@ -1,0 +1,540 @@
+/* ------ Specification ------ */
+body {
+	font-family: 'Roboto', sans-serif;
+	color: #272c2f;
+	padding: 0;
+	margin: 0;
+	line-height: 1.5em;
+	font-size: 15px;
+    font-weight: 400;
+	letter-spacing: 0.03em;
+}
+
+.container {
+	width: 1140px;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+div, p, form, input, a, span, button {
+	box-sizing: border-box;
+}
+
+p {
+	margin: 0;
+}
+
+ul, li {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+h1 {
+    font-size: 45px;
+    color: #1b3bde;
+    line-height: 1.2em;
+}
+
+h2 {
+	font-size: 28px;
+    font-weight: 900;
+    line-height: 1.5em;
+}
+
+h3 {
+	font-size: 22px;
+    text-transform: uppercase;
+}
+
+h4 {
+	font-size: 19px;
+    font-weight: 900;
+}
+
+h5 {
+	font-size: 17px;
+    font-weight: 900;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	padding: 0;
+	margin: 0;
+	font-weight: bold;
+}
+
+.input, input:hover, input:focus, input:active, button, button:hover, button:focus, input:active {
+    outline: none;
+} 
+.btn {
+    font-family: 'Roboto', sans-serif;
+    width: 269px;
+    height: 59px;
+    border: none;
+    border-radius: 5px;
+    margin: 12px 0 13px 0;
+    padding: 18px 20px 20px;
+    background-color: #4acc4d;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 900;
+    cursor: pointer;
+    letter-spacing: 0.02em;
+}
+
+.btn:hover {
+    background: #4acc4d;
+    color: #000;
+    transition: all 0.5s ease;
+}
+
+.btn:active {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4) inset;
+}
+
+.box {
+    width: 469px;
+    height: 265px;
+    border-radius: 5px;
+    box-shadow: 0 0 80px rgba(0, 0, 0, 0.22);
+}
+/* ------ First section ------ */
+
+.navigation {
+    display: flex;
+    padding: 16px 0 23px ;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu {
+    display: flex;
+    font-size: 13px;
+    margin: 10px 0 0 40px;
+    letter-spacing: 0.02em;
+}
+
+.menu__info {
+    text-decoration: none;
+    color: #000;
+}
+
+.menu__info:hover {
+    height: 28px;
+    border-radius: 5px;
+    font-size: 13px;
+    background-color: #000;
+    color: #fff;
+    padding: 3px 20px ;
+    transition: all 0.5s ease;
+}
+
+.menu__info:not(:last-child) {
+    margin-right: 39px;
+}
+
+.name-logo {
+    text-transform: uppercase;
+    width: 160px;
+    font-weight: 900;
+    color: #1b3bde;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    line-height: 1.35em;
+}
+
+.fa-dragon:before {
+    width: 49px;
+    height: 49px;
+    border-radius: 5px;
+    background: #1b3bde;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 11px;
+}
+
+.name-logo__my-school {
+    font-size: 14.55px;
+    
+}
+
+.name-logo__site {
+    font-size: 20.21px;
+}
+
+.tel {
+    font-size: 15px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #000;
+    margin-top: 6px;
+}
+
+.content {
+    background: #f0f7f7 url(../img/header.jpg) center top;
+    box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.content .container {
+    display: flex;
+    padding: 89px 72px 134px 35px;
+}
+.prof {
+    width: 700px;
+    text-align: center;
+    margin: auto 100px auto 0;
+    letter-spacing: 0.08em;
+}
+
+.prof__master {
+    font-weight: 300;
+    font-size: 16px;
+    margin-bottom: 19px;
+    margin-left: 10px;
+    letter-spacing: 0.035em;
+}
+
+.prof__date {
+    font-size: 14px;
+    width: 148px;
+    height: 28px;
+    border-radius: 3px;
+    background-color: #000;
+    color: #fff;
+    margin: 29px 0 0 235px;
+    padding: 4px;
+    letter-spacing: 0.02em;
+}
+
+.wrap {
+    width: 333px;
+    height: 418px;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 35px 32px 28px 31px;
+    text-align: center;
+    box-shadow: 0 0 80px rgba(0, 0, 0, 0.22);
+    line-height: 1.4em;
+}
+
+.wrap__stay-prof {
+    font-size: 14px;
+    margin-top: 12px;
+}
+
+.form {
+    margin-top: 20px;
+}
+
+
+.form__input {
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    height: 39.5px;
+    width: 269px;
+    border: none;
+    border-bottom: 1px solid #bababa;
+    color: #bababa ;
+    margin-bottom: 10px;
+    letter-spacing: 0.02em;
+}
+
+.form__input:focus {
+    border: none;
+    border-bottom: 1px solid #000;
+    color: #000;
+}
+
+.form__protect {
+    font-size: 12px;
+    color: #bababa;
+    letter-spacing: 0.02em;
+    margin-right: 10px;
+}
+
+/* ------ Second section ------ */
+
+.About-me {
+    padding: 122px 0;
+}
+
+.know {
+    display: flex;
+    align-items: center;
+}
+
+.exp {
+    background-color: #9d6bdc;
+    color: #fff;
+    padding: 42px 0 44px 56px;
+    margin-bottom: 65px;
+}
+
+.exp__your-name {
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.exp__digits {
+    display: flex;
+    margin-top: 25px;
+}
+
+.exp__element {
+    display: flex;
+    align-items: center;
+    margin-right: 43px;
+}
+ 
+.exp__icon {
+    margin-right: 16px;
+    font-size: 39px;
+    font-weight: 700;
+}
+
+.exp__text {
+    width: 65px;
+    font-size: 13px;
+    line-height: 1.3em;
+}
+
+.exp__freelance {
+    margin-top: 8px;
+}
+
+.exp__more {
+    display: block;
+    margin-top: 22px;
+    margin-left: 3px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 900;
+}
+
+.income {
+    width: 450px;
+    margin-left: 97px;
+    margin-bottom: 90px;
+    letter-spacing: 0.04em;
+}
+
+.income__static {
+    margin-top: 13px;
+    letter-spacing: 0.025em;
+    line-height: 1.6em;
+}
+
+.money {
+    background-color: #f6e23a;
+    color: #000;
+    text-align: center;
+}
+
+.money__dollar {
+    font-size: 43px;
+    font-weight: 900;
+}
+
+.growth {
+    margin: 107px auto;
+    width: 140px;
+    height: 90px;
+}
+
+.money__mounth {
+    font-size: 21px;
+    line-height: 1.5em;
+}
+
+.desire {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.small {
+    margin-left: 132px;
+    margin-top: -33px;
+    width: 450px;
+}
+
+.small__lacks {
+    margin-top: 13px;
+    letter-spacing: 0.025em;
+    line-height: 1.6em;
+}
+
+/* ------ Third section ------ */
+
+.main {
+    background: #f0f7f7 url(../img/header.jpg) center top;
+}
+
+.main .container {
+    padding: 98px 0 107px;
+}
+
+.show {
+    line-height: 1.35em;
+}
+
+.achieves {
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.4em;
+}
+
+.achieves span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    width: 82px;
+    height: 82px;
+    border-radius: 5px;
+    background-color: #1b3bde;
+    color: #fff;
+}
+
+.achieves h4 {
+    color: #1b3bde;
+    margin-bottom: 14px;
+    letter-spacing: 0.04em;
+}
+
+.rule {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+
+.achieves__work {
+    margin-left: 57px;
+}
+
+
+.achieves__title {
+    width: 230px;
+    margin-left: 33px;
+    margin-top: 20px;
+
+}
+
+/* ------ Fourth section ------ */
+
+.if-you {
+    padding: 82px 0 100px 0;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 65px;
+}
+
+.card {
+    width: 348px;
+    height: 236px;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+}
+
+.cards__capacity {
+    margin-top: 67px;
+}
+
+.cards__web {
+    background-color: #4acc4d;
+}
+
+.cards__discontent {
+    background-color: #4ac7cc;
+}
+
+.cards__earnings{
+    background-color: #dc6b83;
+}
+
+.cards h4 {
+    width: 270px;
+    margin: auto;
+    margin-top: 15px;
+}
+
+/* ------ Fifth section ------ */
+
+.record {
+    background: #f0f7f7 url(../img/5-section.jpg) center top;
+}
+
+.record .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 103px 72px 104px 0;
+}
+
+.potential{
+    display: block;
+    width: 600px;
+    text-align: center;
+    margin: 103px 83px 30px 70px;
+    letter-spacing: 0.04em;
+}
+
+.potential__master {
+    font-weight: 300;
+    font-size: 16px;
+    margin-bottom: 28px;
+    color: #fff;
+}
+
+.potential h2 {
+    color: #fff;
+    line-height: 1.4em;
+}
+
+.wait-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin-left: 25px;
+    letter-spacing: 0.01em;
+}
+
+.wait-list__date {
+    font-size: 16px;
+    margin: 26px 18px 26px 7px;
+    
+}
+
+.wait-list__place {
+    font-size: 16px;
+    margin: 26px 7px;
+}
+
+/* ------ Sixth section ------ */
+
+.footer {
+    padding: 23px 0 24px 0;
+    justify-content: space-between;
+}
+
+.footer__protect {
+    font-size: 12px;
+    margin-left: 95px;
+    margin-bottom: 4px;
+}
+
+.fa-phone-flip {
+    margin-left: auto;
+    margin-right: 5px;
+}
