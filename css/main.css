@@ -155,11 +155,11 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     justify-content: space-around;
     margin-right: 11px;
+	color: #fff;
 }
 
 .name-logo__my-school {
     font-size: 14.55px;
-    
 }
 
 .name-logo__site {
