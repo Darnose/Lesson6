@@ -30,6 +30,10 @@ ul, li {
 	margin: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 h1 {
     font-size: 45px;
     color: #1b3bde;
@@ -110,27 +114,25 @@ h1, h2, h3, h4, h5, h6 {
 .menu {
     display: flex;
     font-size: 13px;
-    margin: 10px 0 0 40px;
+    margin: 10px 0 0 22px;
     letter-spacing: 0.02em;
 }
 
 .menu__info {
-    text-decoration: none;
     color: #000;
+    transition: all 0.5s ease;
+    padding-left: 19.5px;
+    padding-right: 19.5px;
 }
 
 .menu__info:hover {
-    height: 28px;
+
     border-radius: 5px;
     font-size: 13px;
     background-color: #000;
     color: #fff;
-    padding: 3px 20px ;
-    transition: all 0.5s ease;
-}
-
-.menu__info:not(:last-child) {
-    margin-right: 39px;
+    padding: 6px 19px ;
+    
 }
 
 .name-logo {
@@ -171,7 +173,6 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 15px;
     font-weight: 900;
     text-transform: uppercase;
-    text-decoration: none;
     color: #000;
     margin-top: 6px;
 }
@@ -183,12 +184,16 @@ h1, h2, h3, h4, h5, h6 {
 
 .content .container {
     display: flex;
+    justify-content: space-between;
     padding: 89px 72px 134px 35px;
 }
 .prof {
-    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    margin: auto 100px auto 0;
+    width: 600px;
     letter-spacing: 0.08em;
 }
 
@@ -203,39 +208,35 @@ h1, h2, h3, h4, h5, h6 {
 .prof__date {
     font-size: 14px;
     width: 148px;
-    height: 28px;
+    padding: 3px 0;
     border-radius: 3px;
     background-color: #000;
     color: #fff;
-    margin: 29px 0 0 235px;
-    padding: 4px;
+    margin-top: 30px;
+    margin-left: 15px;
     letter-spacing: 0.02em;
 }
 
-.wrap {
+.form {
     width: 333px;
-    height: 418px;
     border-radius: 5px;
     background-color: #fff;
-    padding: 35px 32px 28px 31px;
+    padding: 35px 30px 33px 32px;
     text-align: center;
     box-shadow: 0 0 80px rgba(0, 0, 0, 0.22);
     line-height: 1.4em;
 }
 
-.wrap__stay-prof {
+.form__stay-prof {
     font-size: 14px;
     margin-top: 12px;
-}
-
-.form {
-    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .form__input {
     font-family: 'Roboto', sans-serif;
     font-size: 13px;
-    height: 39.5px;
+    padding: 12px 0 ;
     width: 269px;
     border: none;
     border-bottom: 1px solid #bababa;
@@ -247,14 +248,17 @@ h1, h2, h3, h4, h5, h6 {
 .form__input:focus {
     border: none;
     border-bottom: 1px solid #000;
+}
+
+.form__input:focus::placeholder {
     color: #000;
 }
 
 .form__protect {
     font-size: 12px;
     color: #bababa;
-    letter-spacing: 0.02em;
-    margin-right: 10px;
+    letter-spacing: 0.01em;
+    margin-right: 14px;
 }
 
 /* ------ Second section ------ */
@@ -265,14 +269,15 @@ h1, h2, h3, h4, h5, h6 {
 
 .know {
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    margin-bottom: 65px;
 }
 
 .exp {
     background-color: #9d6bdc;
     color: #fff;
     padding: 42px 0 44px 56px;
-    margin-bottom: 65px;
 }
 
 .exp__your-name {
@@ -312,16 +317,18 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 22px;
     margin-left: 3px;
     font-size: 14px;
-    text-decoration: none;
     color: #fff;
     font-weight: 900;
 }
 
 .income {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 450px;
-    margin-left: 97px;
-    margin-bottom: 90px;
     letter-spacing: 0.04em;
+    margin-bottom: 22px;
+    margin-right: 123px;
 }
 
 .income__static {
@@ -331,25 +338,25 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .money {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
     background-color: #f6e23a;
     color: #000;
-    text-align: center;
 }
 
 .money__dollar {
     font-size: 43px;
     font-weight: 900;
-}
-
-.growth {
-    margin: 107px auto;
-    width: 140px;
-    height: 90px;
+    margin-top: 10px;
 }
 
 .money__mounth {
     font-size: 21px;
     line-height: 1.5em;
+    margin-top: 10px;
+    margin-left: 4px;
 }
 
 .desire {
@@ -359,8 +366,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .small {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 30px;
     margin-left: 132px;
-    margin-top: -33px;
     width: 450px;
 }
 
@@ -382,12 +392,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .show {
     line-height: 1.35em;
+    letter-spacing: 0.035em;
 }
 
 .achieves {
     display: flex;
     justify-content: space-between;
     line-height: 1.4em;
+    margin-top: 70px;;
 }
 
 .achieves span{
@@ -411,19 +423,16 @@ h1, h2, h3, h4, h5, h6 {
 .rule {
     display: flex;
     justify-content: space-between;
-    margin-top: 70px;
 }
 
 .achieves__work {
     margin-left: 57px;
 }
 
-
 .achieves__title {
     width: 230px;
     margin-left: 33px;
     margin-top: 20px;
-
 }
 
 /* ------ Fourth section ------ */
@@ -440,11 +449,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 348px;
     height: 236px;
     border-radius: 5px;
     color: #fff;
     text-align: center;
+    padding: 65px 40px;
 }
 
 .cards__capacity {
@@ -478,27 +492,30 @@ h1, h2, h3, h4, h5, h6 {
 .record .container {
     display: flex;
     justify-content: space-between;
-    padding: 103px 72px 104px 0;
+    padding: 102px 73px 104px 0;
 }
 
 .potential{
-    display: block;
-    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 725px;
     text-align: center;
-    margin: 103px 83px 30px 70px;
     letter-spacing: 0.04em;
+    margin-bottom: 8px;
 }
 
 .potential__master {
     font-weight: 300;
     font-size: 16px;
-    margin-bottom: 28px;
+    margin-bottom: 30px;
     color: #fff;
 }
 
 .potential h2 {
     color: #fff;
-    line-height: 1.4em;
+    line-height: 1.3em;
 }
 
 .wait-list {
@@ -512,34 +529,29 @@ h1, h2, h3, h4, h5, h6 {
 
 .wait-list__date {
     font-size: 16px;
-    margin: 26px 18px 26px 7px;
+    margin: 30px 18px 26px 7px;
     
 }
 
 .wait-list__place {
     font-size: 16px;
-    margin: 26px 7px;
+    margin: 30px 7px 26px;
 }
 
 /* ------ Sixth section ------ */
 
 .footer {
     padding: 23px 0 24px 0;
-    justify-content: space-between;
 }
 
 .footer__protect {
     font-size: 12px;
-    margin-left: 95px;
+    margin-left: 94px;
     margin-bottom: 4px;
+    letter-spacing: 0.02em;
 }
 
-.fa-phone-flip {
-    margin-left: auto;
-    margin-right: 5px;
-}
-
-.pro {
+.footer .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
