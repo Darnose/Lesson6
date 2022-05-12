@@ -146,7 +146,7 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.35em;
 }
 
-.fa-dragon:before {
+.logo__icon {
     width: 49px;
     height: 49px;
     border-radius: 5px;
@@ -155,11 +155,12 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     justify-content: space-around;
     margin-right: 11px;
-	color: #fff;
+    color: #fff;
 }
 
 .name-logo__my-school {
     font-size: 14.55px;
+    
 }
 
 .name-logo__site {
@@ -230,7 +231,6 @@ h1, h2, h3, h4, h5, h6 {
 .form {
     margin-top: 20px;
 }
-
 
 .form__input {
     font-family: 'Roboto', sans-serif;
@@ -537,4 +537,10 @@ h1, h2, h3, h4, h5, h6 {
 .fa-phone-flip {
     margin-left: auto;
     margin-right: 5px;
+}
+
+.pro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
