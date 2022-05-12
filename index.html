@@ -11,7 +11,7 @@
 <body>
     <header id="header" class="header">
        <div class="container">
-           <div class="navigation">
+           <nav class="navigation">
                <div class="logo">
                    <div class="logo__icon">
                     <img src="img/logo.png" alt="logo">
@@ -24,24 +24,34 @@
                             верстки
                         </span> 
                     </div>
+                    <ul class="menu">
+                        <li>
+                             <a href="#" class="menu__info">
+                             Знаете ли вы 
+                            </a>
+                        </li>
+                        <li>
+                             <a href="#" class="menu__info">
+                             Зачем 
+                            </a>
+                        </li>
+                        <li>
+                             <a href="#" class="menu__info">
+                             Кому  
+                            </a>
+                        </li>
+                        <li>
+                             <a href="#" class="menu__info">
+                             Регистрация 
+                            </a>
+                        </li>
+                    </ul>
                </div>
-               <div class="menu">
-                   <a href="#" class="menu__info">
-                    Знаете ли вы 
-                   </a>
-                   <a href="#" class="menu__info">
-                    Зачем 
-                   </a>
-                   <a href="#" class="menu__info">
-                    Кому  
-                   </a>
-                   <a href="#" class="menu__info">
-                    Регистрация 
-                   </a>
-               </div>
-               <i class="fa-solid fa-phone-flip"></i>
-               <a href="tel:+749556756412" class="tel">+7 (495) 567-564-12</a>
-           </div>
+               
+               <a href="tel:+749556756412" class="tel"><i class="fa-solid fa-phone-flip"></i>
+                +7 (495) 567-564-12
+                </a>
+            </nav>
        </div>
        <div class="content">
             <div class="container">
@@ -53,29 +63,27 @@
                     <h1>
                     Я — профессиональный веб-верстальщик
                     </h1>
-                    <p class="prof__date">
+                    <time class="prof__date">
                     9 апреля в 18:00
-                    </p>
+                    </time>
                 </div>
-                <div class="wrap">
+                <form action="#" class="form">
                     <h5>
-                    Забронировать участие
+                        Забронировать участие
                     </h5>
-                    <p class="wrap__stay-prof">
+                    <p class="form__stay-prof">
                         Чтобы стать профессионалом в HTML и CSS, а также делать WOW
                     </p>
-                    <form action="#" class="form">
-                        <input type="text" class="form__input" placeholder="Введите имя" name="name" required>
-                        <input type="E-mail" class="form__input" placeholder="Введите E-mail" name="email" required>
-                        <input type="tel" class="form__input" placeholder="Введите телефон" name="phone" required>
-                        <button type="submit" class="form__submit btn">
-                        Оставить заявку
-                        </button>
-                    </form>
+                    <input type="text" class="form__input" placeholder="Введите имя" name="name" required>
+                    <input type="E-mail" class="form__input" placeholder="Введите E-mail" name="email" required>
+                    <input type="tel" class="form__input" placeholder="Введите телефон" name="phone" required>
+                    <button type="submit" class="form__submit btn">
+                    Оставить заявку
+                    </button>
                     <p class="form__protect">
-                    Ваши данные под защитой
+                        Ваши данные под защитой
                     </p>
-                </div>
+                </form>
             </div>
        </div>
     </header>
@@ -135,14 +143,12 @@
                     </p>
                </div>
                <div class="money box">
-                   <div class="growth">
                     <span class="money__dollar">
                         $1000
                     </span>
                     <span class="money__mounth">
                         в месяц?
                     </span>
-                   </div>
                </div>
             </div>
         </div>
@@ -204,28 +210,22 @@
             </h2>
             <div class="cards">
                 <div class="cards__web card">
-                    <div class="cards__capacity">
-                        <i class="fa-regular fa-flag fa-3x"></i> 
-                        <h4>
-                            Начинающий <br> веб-верстальщик
-                        </h4>
-                    </div>
+                    <i class="fa-regular fa-flag fa-3x"></i> 
+                    <h4>
+                        Начинающий <br> веб-верстальщик
+                    </h4>
                 </div>
                 <div class="cards__discontent card">
-                    <div class="cards__capacity">
-                        <i class="fa-regular fa-money-bill-1 fa-3x"></i>
-                        <h4>
-                         Не довольны доходами на фрилансе
-                        </h4>
-                    </div>
+                    <i class="fa-regular fa-money-bill-1 fa-3x"></i>
+                    <h4>
+                        Не довольны доходами на фрилансе
+                    </h4>
                 </div>
                 <div class="cards__earnings card">
-                    <div class="cards__capacity">
-                        <i class="fa-regular fa-face-rolling-eyes fa-3x"></i>
-                        <h4>
-                         На фрилансе >2 лет, но ваш доход < $1000
-                        </h4>
-                    </div>
+                    <i class="fa-regular fa-face-rolling-eyes fa-3x"></i>
+                    <h4>
+                        На фрилансе >2 лет, но ваш доход < $1000
+                    </h4>
                 </div>
             </div>
         </div>
@@ -244,58 +244,55 @@
                     </h2>
                     <div class="wait-list">
                         <i class="fa-solid fa-clock"></i>
-                        <p class="wait-list__date">
+                        <time class="wait-list__date">
                         9 апреля в 18:00
-                        </p>
+                        </time>
                         <i class="fa-solid fa-users"></i>
                         <p class="wait-list__place" >
                             Всего 40 мест
                         </p>
                     </div>
                 </div>
-                <div class="wrap">
+                <form action="#" class="form">
                     <h5>
-                    Забронировать участие
+                        Забронировать участие
                     </h5>
-                    <p class="wrap__stay-prof">
+                    <p class="form__stay-prof">
                         Чтобы стать профессионалом в HTML и CSS, а также делать WOW
-                        </p>
-                    <form action="#" class="form">
-                        <input type="text" class="form__input" placeholder="Введите имя" name="name" >
-                        <input type="email" class="form__input" placeholder="Введите E-mail" name="email">
-                        <input type="tel" class="form__input" placeholder="Введите телефон" name="phone">
-                        <button type="submit" class="form__submit btn">
-                        Оставить заявку
-                        </button>
-                    </form>
-                    <p class="form__protect">
-                    Ваши данные под защитой
                     </p>
-                </div>
+                    <input type="text" class="form__input" placeholder="Введите имя" name="name" required>
+                    <input type="E-mail" class="form__input" placeholder="Введите E-mail" name="email" required>
+                    <input type="tel" class="form__input" placeholder="Введите телефон" name="phone" required>
+                    <button type="submit" class="form__submit btn">
+                    Оставить заявку
+                    </button>
+                    <p class="form__protect">
+                        Ваши данные под защитой
+                    </p>
+                </form>
             </div>
     </section>
     <footer id="footer" class="footer">
         <div class="container">
-            <div class="pro">
-                <div class="logo">
-                    <div class="logo__icon">
-                        <img src="img/logo.png" alt="logo">
-                    </div>
-                    <div class="name-logo">
-                        <span class="name-logo__my-school">
-                            Моя школа
-                        </span> 
-                        <span class="name-logo__site">
-                            верстки
-                        </span> 
-                    </div>
+            <div class="logo">
+                <div class="logo__icon">
+                    <img src="img/logo.png" alt="logo">
+                </div>
+                <div class="name-logo">
+                    <span class="name-logo__my-school">
+                        Моя школа
+                    </span> 
+                    <span class="name-logo__site">
+                        верстки
+                    </span> 
                 </div>
                 <p class="footer__protect">
                     Все права защищены
                 </p>
-                <i class="fa-solid fa-phone-flip"></i>
-                <a href="tel:+749556756412" class="tel">+7 (495) 567-564-12</a>
             </div>
+            <a href="tel:+749556756412" class="tel"><i class="fa-solid fa-phone-flip"></i>
+                +7 (495) 567-564-12
+            </a>
         </div>
     </footer>
     <script src="https://kit.fontawesome.com/b882084224.js" crossorigin="anonymous"></script>
