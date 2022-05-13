@@ -16,7 +16,7 @@
                    <div class="logo__icon">
                     <img src="img/logo.png" alt="logo">
                    </div>
-                    <div class="name-logo">
+                    <div class="logo__name-logo">
                         <span class="name-logo__my-school">
                             Моя школа
                         </span> 
@@ -24,30 +24,29 @@
                             верстки
                         </span> 
                     </div>
-                    <ul class="menu">
-                        <li>
-                             <a href="#" class="menu__info">
-                             Знаете ли вы 
-                            </a>
-                        </li>
-                        <li>
-                             <a href="#" class="menu__info">
-                             Зачем 
-                            </a>
-                        </li>
-                        <li>
-                             <a href="#" class="menu__info">
-                             Кому  
-                            </a>
-                        </li>
-                        <li>
-                             <a href="#" class="menu__info">
-                             Регистрация 
-                            </a>
-                        </li>
-                    </ul>
                </div>
-               
+               <ul class="menu">
+                <li>
+                     <a href="#" class="menu__info">
+                     Знаете ли вы 
+                    </a>
+                </li>
+                <li>
+                     <a href="#" class="menu__info">
+                     Зачем 
+                    </a>
+                </li>
+                <li>
+                     <a href="#" class="menu__info">
+                     Кому  
+                    </a>
+                </li>
+                <li>
+                     <a href="#" class="menu__info">
+                     Регистрация 
+                    </a>
+                </li>
+            </ul>
                <a href="tel:+749556756412" class="tel"><i class="fa-solid fa-phone-flip"></i>
                 +7 (495) 567-564-12
                 </a>
@@ -55,35 +54,37 @@
        </div>
        <div class="content">
             <div class="container">
-                <div class="prof">
-                    <p class="prof__master">
-                    <i class="fa-solid fa-graduation-cap"></i>
-                    Онлайн-мастер-класс
-                    </p>
-                    <h1>
-                    Я — профессиональный веб-верстальщик
-                    </h1>
-                    <time class="prof__date">
-                    9 апреля в 18:00
-                    </time>
+                <div class="compound">
+                    <div class="prof">
+                        <p class="prof__master">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        Онлайн-мастер-класс
+                        </p>
+                        <h1>
+                        Я — профессиональный веб-верстальщик
+                        </h1>
+                        <time datetime="04-09T18:00" class="prof__date">
+                        9 апреля в 18:00
+                        </time>
+                    </div>
+                    <form action="#" class="form">
+                        <h5>
+                            Забронировать участие
+                        </h5>
+                        <p class="form__stay-prof">
+                            Чтобы стать профессионалом в HTML и CSS, а также делать WOW
+                        </p>
+                        <input type="text" class="form__input" placeholder="Введите имя" name="name" required>
+                        <input type="email" class="form__input" placeholder="Введите E-mail" name="email" required>
+                        <input type="tel" class="form__input" placeholder="Введите телефон" name="phone" required>
+                        <button type="submit" class="form__submit btn">
+                        Оставить заявку
+                        </button>
+                        <p class="form__protect">
+                            Ваши данные под защитой
+                        </p>
+                    </form>
                 </div>
-                <form action="#" class="form">
-                    <h5>
-                        Забронировать участие
-                    </h5>
-                    <p class="form__stay-prof">
-                        Чтобы стать профессионалом в HTML и CSS, а также делать WOW
-                    </p>
-                    <input type="text" class="form__input" placeholder="Введите имя" name="name" required>
-                    <input type="E-mail" class="form__input" placeholder="Введите E-mail" name="email" required>
-                    <input type="tel" class="form__input" placeholder="Введите телефон" name="phone" required>
-                    <button type="submit" class="form__submit btn">
-                    Оставить заявку
-                    </button>
-                    <p class="form__protect">
-                        Ваши данные под защитой
-                    </p>
-                </form>
             </div>
        </div>
     </header>
@@ -160,11 +161,11 @@
                 Я покажу,<br> как мне удается...
             </h2>
             <div class="achieves">
-                <div class="achieves__skill rule">
+                <div class="achieves__rule achieves__rule_skill">
                     <span>
                         1
                     </span>
-                    <div class="achieves__title">
+                    <div class="achieves__wrap">
                         <h4>
                             Зарабатывать тысячи долларов
                         </h4>
@@ -173,24 +174,24 @@
                         </p>
                     </div>
                 </div>
-                <div class="achieves__work rule">
+                <div class="achieves__rule achieves__rule_work">
                     <span>
                         2
                     </span>
-                    <div class="achieves__title">
+                    <div class="achieves__wrap">
                         <h4>
-                            Работать <br> в путешествиях
+                            Работать в&nbsp;путешествиях
                         </h4>
                         <p>
                             Без возврата домой, используя ноутбук и все возможности фриланса
                         </p>
                     </div>
                 </div>
-                <div class="achieves__step rule">
+                <div class="achieves__rule achieves__rule_step ">
                     <span>
                         3
                     </span>
-                    <div class="achieves__title">
+                    <div class="achieves__wrap">
                         <h4>
                             Быть на шаг впереди конкурентов
                         </h4>
@@ -234,42 +235,44 @@
     <section id="reg" class="reg">
         <div class="record">
             <div class="container">
-                <div class="potential">
-                    <p class="potential__master">
-                    <i class="fa-solid fa-graduation-cap"></i>
-                    Онлайн-мастер-класс
-                    </p>
-                    <h2>
-                    Не потеряйте уникальную возможность. Бронируйте участие уже сегодня!
-                    </h2>
-                    <div class="wait-list">
-                        <i class="fa-solid fa-clock"></i>
-                        <time class="wait-list__date">
-                        9 апреля в 18:00
-                        </time>
-                        <i class="fa-solid fa-users"></i>
-                        <p class="wait-list__place" >
-                            Всего 40 мест
+                <div class="union">
+                    <div class="potential">
+                        <p class="potential__master">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        Онлайн-мастер-класс
                         </p>
+                        <h2>
+                        Не потеряйте уникальную возможность. Бронируйте участие уже сегодня!
+                        </h2>
+                        <div class="wait-list">
+                            <i class="fa-solid fa-clock"></i>
+                            <time datetime="04-09T18:00" class="wait-list__date">
+                            9 апреля в 18:00
+                            </time>
+                            <i class="fa-solid fa-users"></i>
+                            <p class="wait-list__place" >
+                                Всего 40 мест
+                            </p>
+                        </div>
                     </div>
+                    <form action="#" class="form">
+                        <h5>
+                            Забронировать участие
+                        </h5>
+                        <p class="form__stay-prof">
+                            Чтобы стать профессионалом в HTML и CSS, а также делать WOW
+                        </p>
+                        <input type="text" class="form__input" placeholder="Введите имя" name="name" required>
+                        <input type="email" class="form__input" placeholder="Введите E-mail" name="email" required>
+                        <input type="tel" class="form__input" placeholder="Введите телефон" name="phone" required>
+                        <button type="submit" class="form__submit btn">
+                        Оставить заявку
+                        </button>
+                        <p class="form__protect">
+                            Ваши данные под защитой
+                        </p>
+                    </form>
                 </div>
-                <form action="#" class="form">
-                    <h5>
-                        Забронировать участие
-                    </h5>
-                    <p class="form__stay-prof">
-                        Чтобы стать профессионалом в HTML и CSS, а также делать WOW
-                    </p>
-                    <input type="text" class="form__input" placeholder="Введите имя" name="name" required>
-                    <input type="E-mail" class="form__input" placeholder="Введите E-mail" name="email" required>
-                    <input type="tel" class="form__input" placeholder="Введите телефон" name="phone" required>
-                    <button type="submit" class="form__submit btn">
-                    Оставить заявку
-                    </button>
-                    <p class="form__protect">
-                        Ваши данные под защитой
-                    </p>
-                </form>
             </div>
     </section>
     <footer id="footer" class="footer">
@@ -279,7 +282,7 @@
                     <div class="logo__icon">
                         <img src="img/logo.png" alt="logo">
                     </div>
-                    <div class="name-logo">
+                    <div class="logo__name-logo">
                         <span class="name-logo__my-school">
                             Моя школа
                         </span> 
@@ -287,10 +290,10 @@
                             верстки
                         </span> 
                     </div>
-                    <p class="footer__protect">
-                        Все права защищены
-                    </p>
                 </div>
+                <p class="footer__protect">
+                    Все права защищены
+                </p>
                 <a href="tel:+749556756412" class="tel"><i class="fa-solid fa-phone-flip"></i>
                     +7 (495) 567-564-12
                 </a>
