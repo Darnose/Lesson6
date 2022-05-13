@@ -114,15 +114,16 @@ h1, h2, h3, h4, h5, h6 {
 .menu {
     display: flex;
     font-size: 13px;
-    margin: 10px 0 0 22px;
+    margin-top: 10px;
     letter-spacing: 0.02em;
+    margin-right: auto;
+    margin-left: 25px;
 }
 
 .menu__info {
     color: #000;
     transition: all 0.5s ease;
-    padding-left: 19.5px;
-    padding-right: 19.5px;
+    padding: 6px 19px ;
 }
 
 .menu__info:hover {
@@ -135,7 +136,7 @@ h1, h2, h3, h4, h5, h6 {
     
 }
 
-.name-logo {
+.logo__name-logo {
     text-transform: uppercase;
     width: 160px;
     font-weight: 900;
@@ -180,12 +181,13 @@ h1, h2, h3, h4, h5, h6 {
 .content {
     background: #f0f7f7 url(../img/header.jpg) center top;
     box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.1);
+    padding: 89px 0 134px;
 }
 
-.content .container {
+.compound {
     display: flex;
     justify-content: space-between;
-    padding: 89px 72px 134px 35px;
+    padding: 0px 72px 0px 35px;
 }
 
 .prof {
@@ -329,7 +331,8 @@ h1, h2, h3, h4, h5, h6 {
     width: 450px;
     letter-spacing: 0.04em;
     margin-bottom: 22px;
-    margin-right: 123px;
+    margin-right: auto;
+    margin-left: 98px;
 }
 
 .income__static {
@@ -371,7 +374,8 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
     justify-content: center;
     margin-bottom: 30px;
-    margin-left: 132px;
+    margin-left: auto;
+    margin-right: 90px;
     width: 450px;
 }
 
@@ -385,9 +389,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .main {
     background: #f0f7f7 url(../img/header.jpg) center top;
-}
-
-.main .container {
     padding: 98px 0 107px;
 }
 
@@ -421,16 +422,16 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 0.04em;
 }
 
-.rule {
+.achieves__rule {
     display: flex;
     justify-content: space-between;
 }
 
-.achieves__work {
+.achieves__rule_work {
     margin-left: 57px;
 }
 
-.achieves__title {
+.achieves__wrap {
     width: 230px;
     margin-left: 33px;
     margin-top: 20px;
@@ -488,12 +489,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .record {
     background: #f0f7f7 url(../img/5-section.jpg) center top;
+    padding: 102px 0 104px;
 }
 
-.record .container {
+.union {
     display: flex;
     justify-content: space-between;
-    padding: 102px 73px 104px 0;
+    padding-right: 73px;
 }
 
 .potential{
@@ -547,6 +549,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer__protect {
     font-size: 12px;
+    margin-right: auto;
     margin-left: 94px;
     margin-bottom: 4px;
     letter-spacing: 0.02em;
